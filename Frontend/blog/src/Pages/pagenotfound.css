@@ -1,0 +1,49 @@
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f9fafb;
+    text-align: center;
+  }
+  
+  .notfound-heading {
+    font-size: 8rem;
+    font-weight: 800;
+    color: #1f2937;
+    letter-spacing: 5px;
+  }
+  
+  .notfound-subtext {
+    font-size: 1.5rem;
+    color: #4b5563;
+    margin-top: 10px;
+  }
+  
+  .notfound-description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: 5px;
+  }
+  
+  .notfound-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  
+  .notfound-button:hover {
+    background-color: #1e40af;
+    transform: scale(1.05);
+  }
+  

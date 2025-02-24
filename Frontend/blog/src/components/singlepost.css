@@ -1,0 +1,145 @@
+.singlePost {
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.singlePostWrapper {
+  max-width: 750px; /* Keeps the post within a readable width */
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.singlePostImg {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+.singlePostTitle {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 32px;
+  font-family: "Lora", sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 18px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+
+.singlePostIcon:last-child {
+  color: tomato;
+}
+
+.singlePostInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #be9656;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.singlePostAuthor {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.authorImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.authorImg:hover {
+  transform: scale(1.1);
+}
+
+.singlePostDesc {
+  color: #444;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 15px;
+}
+
+.singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .singlePostWrapper {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .singlePostWrapper {
+    padding: 15px;
+  }
+
+  .singlePostTitle {
+    font-size: 26px;
+  }
+
+  .singlePostInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .singlePostAuthor {
+    font-size: 16px;
+  }
+
+  .singlePostDesc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .singlePostTitle {
+    font-size: 22px;
+  }
+
+  .singlePostDesc {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .authorImg {
+    width: 40px;
+    height: 40px;
+  }
+}

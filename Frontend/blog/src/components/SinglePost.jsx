@@ -57,7 +57,7 @@ export default function SinglePost() {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:9091/api/v1/post/${id}`);
+      await axios.delete(`http://localhost:9091/api/v1/post/${id}`,{withCredentials:true});
       alert("Post deleted successfully!");
       navigate("/userposts");
     } catch (err) {

@@ -38,7 +38,7 @@ export default function EditPost() {
     e.preventDefault();
     setLoading(true); // Start loading
     try {
-      await axios.put(`http://localhost:9091/api/v1/post/${id}`, post);
+      await axios.put(`http://localhost:9091/api/v1/post/${id}`, post,{withCredentials:true});
       navigate(`/post/${id}`); // Redirect to the updated post
     } catch (err) {
       console.error("Error updating post:", err);

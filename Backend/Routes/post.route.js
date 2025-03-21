@@ -8,8 +8,8 @@ const Router = express.Router();
 Router.post('/addPost',authenticateToken,upload.single("image"),uploadPost);
 Router.get("/allPosts",getAllPosts);
 Router.get("/:id",displayPostById);
-Router.delete("/:id",deletePostById);
-Router.put("/:id",updatePostById);
+Router.delete("/:id",authenticateToken,deletePostById);
+Router.put("/:id",authenticateToken,updatePostById);
 
 Router.get("/Userposts/:id",getAllAuthorRelatedPosts);
 

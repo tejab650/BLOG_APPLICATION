@@ -16,6 +16,7 @@ import contactRoutes from './Routes/contact.routes.js';
 
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const corsOptions ={
     origin: ['http://localhost:3000'],
     methods:['GET','POST','PUT','DELETE'],
